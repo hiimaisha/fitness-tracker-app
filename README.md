@@ -1,12 +1,12 @@
-# Fitness Tracker
+# Move Daily — Fitness Tracker
 
-A Streamlit fitness dashboard with manual activity logging and SQLite persistence.
+A Streamlit activity dashboard with SQLite persistence.
 
 ## Features
-- Log date, steps, workout minutes, active calories, and notes
-- Daily metrics and simple progress bars
-- Weekly step and workout charts
-- Recent log table and delete-entry control
+- Manual date, steps, workout minutes, active calories, and notes
+- Daily totals and step/workout progress bars
+- Weekly step and workout charts, including days with zero activity
+- Activity history and guarded delete control
 - SQLite database created automatically
 
 ## Run locally
@@ -14,5 +14,4 @@ A Streamlit fitness dashboard with manual activity logging and SQLite persistenc
 pip install -r requirements.txt
 streamlit run app.py
 ```
-
-The app creates `fitness.db` beside `app.py` on first run. On Streamlit hosting, local files can be reset in some redeploy/rebuild situations; download or back up the database if the data is important.
+On hosted platforms, local database files may be reset during rebuilds; back up your database if the records matter.
